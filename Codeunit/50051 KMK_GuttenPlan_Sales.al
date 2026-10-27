@@ -259,7 +259,8 @@ codeunit 50051 KMK_GuttenPlan_Sale
             SeasonItem(SalesHeader, PreviewMode, IsHandled, SkipCheckReleaseRestrictions, SkipWhseRequestOperations);
             OrderMultiple(SalesHeader, PreviewMode, IsHandled, SkipCheckReleaseRestrictions, SkipWhseRequestOperations);
             ExtDocNo(SalesHeader, PreviewMode, IsHandled, SkipCheckReleaseRestrictions, SkipWhseRequestOperations);
-            if SRSetup.KMK_EDIUserID <> User."User Security ID" then
+            // if SRSetup.KMK_EDIUserID = User."User Security ID" then
+            if SalesHeader.TRCPONumbers <> '' then
                 UpdateSalesPrice(SalesHeader, PreviewMode, IsHandled, SkipCheckReleaseRestrictions, SkipWhseRequestOperations);
         end;
         AddBHLine(SalesHeader, PreviewMode, IsHandled, SkipCheckReleaseRestrictions, SkipWhseRequestOperations);

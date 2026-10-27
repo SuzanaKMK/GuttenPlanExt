@@ -2,7 +2,7 @@
   "id": "96b35a7b-1989-4acc-8024-00ccdbfce3e3",
   "name": "GuttenPlanExt",
   "publisher": "KMK Business",
-  "version": "26.0.0.57",
+  "version": "26.0.0.58",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -12,6 +12,10 @@
   "logo": "",
   "dependencies": [
    
+  {"id": "46be0369-4f46-40e5-825c-ff6f8e4914ce",
+  "name": "TrueCommerce EDI and eCommerce (NA)",
+  "publisher": "TrueCommerce",
+  "version": "9.0.1.99"}
   ],
   "screenshots": [],
   "platform": "1.0.0.0",
